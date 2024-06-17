@@ -25,6 +25,8 @@ wheels/
 profile_default/
 ipython_config.py
 
+# Logs
+deep_learning/TF/logs/*
 
 # Environments
 .env
