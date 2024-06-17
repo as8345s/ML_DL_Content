@@ -27,6 +27,9 @@ ipython_config.py
 
 # Logs
 deep_learning/TF/logs/*
+deep_learning/PyTorch/logs/*
+
+yolo_tmp/*
 
 # Environments
 .env
