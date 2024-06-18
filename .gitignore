@@ -21,6 +21,13 @@ wheels/
 .ipynb_checkpoints
 
 
+#
+*.json
+*.tar
+*.gzip
+*.zip
+
+
 # IPython
 profile_default/
 ipython_config.py
