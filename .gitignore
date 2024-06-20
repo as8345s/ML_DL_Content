@@ -38,6 +38,7 @@ deep_learning/PyTorch/logs/*
 
 yolo_tmp/*
 deep_learning/TF/data/datasets/tf_flowers/*
+deep_learning/TF/data/datasets/IMDB/*
 
 # Environments
 .env
