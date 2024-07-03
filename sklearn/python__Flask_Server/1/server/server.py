@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+
 @app.route('/my_function')
 def my_function():
     """Test Function
@@ -11,9 +13,9 @@ def my_function():
 
 
 
-
-
-if __name__ =="__main__":
+if __name__ == "__main__":
+    """Starting point of the server.
+    """
     print("Starting server")
 
     app.run()

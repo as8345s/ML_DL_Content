@@ -26,6 +26,8 @@ wheels/
 *.tar
 *.gzip
 *.zip
+*.pickle
+*.pkl
 
 
 # IPython
