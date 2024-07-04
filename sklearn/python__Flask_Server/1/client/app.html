@@ -5,46 +5,62 @@
     <title>Make Prediction</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+    <!-- https://www.pexels.com/@jopwell/ img -->
 
 </head>
 <body>
 
-  <h2>Data:</h2>
+    <p id="welcome">Welcome to the Customer Churn prediction page!</p>
 
-    <label for="id_credit_score">credit_score:</label><br>
-    <input type="text" id="id_credit_score" name="credit_score"><br>
+    <form>
+        <div class="form-group">
+            <label for="id_credit_score">credit_score</label>
+            <input type="text" id="id_credit_score" name="id_credit_score">
+        </div>
+        <div class="form-group">
+            <label for="idcountry">Country</label>
+            <input type="text" id="idcountry" name="idcountry">
+        </div>
+        <div class="form-group">
+            <label for="idgender">Gender</label>
+            <input type="text" id="idgender" name="idgender">
+        </div>
+        <div class="form-group">
+            <label for="idage">Age</label>
+            <input type="text" id="idage" name="idage">
+        </div>
+        <div class="form-group">
+            <label for="idtenur">Tenure</label>
+            <input type="text" id="idtenur" name="idtenur">
+        </div>
+        <div class="form-group">
+            <label for="idbalance">Balance</label>
+            <input type="text" id="idbalance" name="idbalance">
+        </div>
+        <div class="form-group">
+            <label for="idproducts_number">products_number</label>
+            <input type="text" id="idproducts_number" name="idproducts_number">
+        </div>
+        <div class="form-group">
+            <label for="idcredit_card">credit_card</label>
+            <input type="text" id="idcredit_card" name="idcredit_card">
+        </div>
+        <div class="form-group">
+            <label for="idactive_member">active_member</label>
+            <input type="text" id="idactive_member" name="idactive_member">
+        </div>
+         <div class="form-group">
+            <label for="idestimated_salary">estimated_salary</label>
+            <input type="text" id="idestimated_salary" name="idestimated_salary">
+        </div>
+    </form>
 
-    <label for="idcountry">country:</label><br>
-    <input type="text" id="idcountry" name="country"><br>
 
-    <label for="idgender">gender:</label><br>
-    <input type="text" id="idgender" name="gender"><br>
+  <button class="btn default" onclick="exec_prediction()"> Default </button>
 
-    <label for="idage">age:</label><br>
-    <input type="text" id="idage" name="age"><br>
-
-    <label for="idtenur">tenur:</label><br>
-    <input type="text" id="idtenur" name="tenur"><br>
-
-    <label for="idbalance">balance:</label><br>
-    <input type="text" id="idbalance" name="balance"><br>
-
-    <label for="idproducts_number">products_number:</label><br>
-    <input type="text" id="idproducts_number" name="products_number"><br>
-
-    <label for="idcredit_card">credit_card:</label><br>
-    <input type="text" id="idcredit_card" name="credit_card"><br>
-
-    <label for="idactive_member">active_member:</label><br>
-    <input type="text" id="idactive_member" name="active_member"><br>
-
-    <label for="idestimated_salary">estimated_salary:</label><br>
-    <input type="text" id="idestimated_salary" name="estimated_salary"><br>
-
-
-
-  <button class="submit" type="button" onclick="exec_prediction()">push</button>
-  <p id="demo">Hallo</p>
+  <p id="result">Prediction: </p>
 
 </body>
 </html>
