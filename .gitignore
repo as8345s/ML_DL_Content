@@ -32,6 +32,9 @@ wheels/
 *.pyc
 *.iml
 
+# other
+sklearn/python_Flask_Server/1/.idea/*
+
 
 # IPython
 profile_default/
