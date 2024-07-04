@@ -28,6 +28,9 @@ wheels/
 *.zip
 *.pickle
 *.pkl
+*.xml
+*.pyc
+*.iml
 
 
 # IPython
