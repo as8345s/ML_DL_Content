@@ -1,7 +1,8 @@
-function exec_func(){
+function test_func(){
     document.write(5 + 6);
-    //console.log(60)
 }
+
+
 
 
 function exec_prediction(){
@@ -23,30 +24,26 @@ function exec_prediction(){
     var url = "http://localhost:5000/make_prediction";
     //document.getElementById("demo").innerHTML = 5 + 6;
     // Query
-    //document.getElementById("demo").innerHTML = 5 + 6; //-- works from here
+    //document.getElementById("demo").innerHTML = 5 + 10; //-- works from here
 
     $.post(url, {
-        credit_score: 9.0,
-        country: 9.0,
-        gender: 9.0,
-        age: 9.0,
-        tenur: 9.0,
-        balance: 9.0,
-        products_number: 9.0,
-        credit_card: 9.0,
-        active_member: 9.0,
-        estimated_salary: 9.0
+        credit_score: 0,
+        country: 0,
+        gender: 0,
+        age: 0,
+        tenure: 0,
+        balance: 0,
+        products_number:0,
+        credit_card: 0,
+        active_member: 0,
+        estimated_salary: 0,
 
-    },function(){ // data, status, xhr
+    },function(data, status){ // data, status, xhr
         //console.log(data.churn_prediction);
-        //estimated_salary.innerHTML = "<h2>"+ data.churn_prediction.to_string() + "lol  </h2>"
-        document.getElementById("demo").innerHTML = 5 + 6;
+        document.getElementById("demo").innerHTML = status;
         //console.log(status);
     });
 
 
-    document.getElementById("demo").innerHTML = 5 + 6;
-
-
-
+    //document.getElementById("demo").innerHTML = 5 + 6;
 }

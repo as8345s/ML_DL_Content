@@ -15,7 +15,7 @@ def my_function():
     return "Hallo"
 
 
-@app.route('/make_prediction', methods=['POST'])
+@app.route('/make_prediction', methods=['POST', 'GET'])
 def predict():
     """Route to the site /make_prediction
     Here we collect the data that is needed for the model to make predictions.
