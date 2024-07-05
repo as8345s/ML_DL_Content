@@ -23,21 +23,16 @@ def predict():
     """
     # Collect all data.
     # - Data can be checked for errors and so on.
-    credit_score = float(request.form['credit_score'])
-    country = float(request.form['country'])
-    gender  =float(request.form['gender'])
-    age = float(request.form['age'])
-    tenure  = float(request.form['tenure'])
-    balance = float(request.form['balance'])
+    country     =   float(request.form['country'])
+    gender      =   float(request.form['gender'])
+    age         =   float(request.form['age'])
     products_number = float(request.form['products_number'])
-    credit_card      = float(request.form['credit_card'])
-    active_member    = float(request.form['active_member'])
-    estimated_salary = float(request.form['estimated_salary'])
+    active_member   = float(request.form['active_member'])
+    credit_card     = float(request.form['credit_card'])
 
     response = jsonify({
-        'churn_prediction': util.make_prediction([[credit_score, country, gender, age, tenure, \
-                                                 balance, products_number, credit_card, active_member, \
-                                                   estimated_salary]])
+        'churn_prediction': util.make_prediction([[country, gender, age, \
+                                                  products_number, credit_card, active_member]])
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
 

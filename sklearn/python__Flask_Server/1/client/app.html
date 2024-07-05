@@ -14,55 +14,63 @@
 
     <p id="welcome">Welcome to the Customer Churn prediction page!</p><br>
 
-    
+
     <form>
+
         <div class="form-group">
-            <label for="id_credit_score">credit_score</label>
-            <input type="text" id="id_credit_score" name="id_credit_score">
-        </div>
-        <div class="form-group">
-            <label for="idcountry">Country</label>
+            <label for="idcountry">Your Country:</label>
             <select id="idcountry" name="idcountry">
                 <option value="" disabled="disabled" selected="selected">Choose Country </option>
                 <option>France</option>
                 <option>Spain</option>
                 <option>Germany</option>
 
-
             </select>
-            <!--<input type="text" id="idcountry" name="idcountry">-->
         </div>
+
         <div class="form-group">
-            <label for="idgender">Gender</label>
-            <input type="text" id="idgender" name="idgender">
+            <label for="idgender">Gender:</label>
+            <select id="idgender" name="idgender">
+                <option value="" disabled="disabled" selected="selected">My Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
         </div>
+
         <div class="form-group">
-            <label for="idage">Age</label>
-            <input type="text" id="idage" name="idage">
+            <label for="idage">My age:</label>
+            <input type="number" min="18" max="90" id="idage" name="idage">
         </div>
+
         <div class="form-group">
-            <label for="idtenur">Tenure</label>
-            <input type="text" id="idtenur" name="idtenur">
+            <label for="idproducts_number">How many products?:</label>
+            <select id="idproducts_number" name="idproducts_number">
+                <option value="" disabled="disabled" selected="selected">Numer of products</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
         </div>
+
         <div class="form-group">
-            <label for="idbalance">Balance</label>
-            <input type="text" id="idbalance" name="idbalance">
-        </div>
-        <div class="form-group">
-            <label for="idproducts_number">products_number</label>
-            <input type="text" id="idproducts_number" name="idproducts_number">
-        </div>
-        <div class="form-group">
-            <label for="idcredit_card">credit_card</label>
-            <input type="text" id="idcredit_card" name="idcredit_card">
-        </div>
-        <div class="form-group">
-            <label for="idactive_member">active_member</label>
-            <input type="text" id="idactive_member" name="idactive_member">
+            <label for="idactive_member">Active member?</label>
+            <select id="idactive_member" name="idactive_member">
+                <option value="" disabled="disabled" selected="selected">Will I be active?</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
         </div>
          <div class="form-group">
-            <label for="idestimated_salary">estimated_salary</label>
-            <input type="text" id="idestimated_salary" name="idestimated_salary">
+              <label for="idcredit_card">I have a credit card:</label>
+              <select id="idcredit_card" name="idcredit_card">
+                <option value="" disabled="disabled" selected="selected">Do I have a card?</option>
+                <option>Yes</option>
+                <option>No</option>
+             </select>
+
         </div>
     </form>
 

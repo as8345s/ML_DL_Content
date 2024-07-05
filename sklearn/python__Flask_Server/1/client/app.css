@@ -13,16 +13,25 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 label {
     margin-bottom: 8px;
+    padding: 5px 5px;
+    background-color: #f2f2f2;
+    font-size: 17px;
+}
+
+select{
+    font-size: 17px;
 }
 
 input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 17px;
 }
 
 
@@ -46,6 +55,46 @@ input {
 
 
 #idcountry{
+    background-color: white;
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+}
+
+#idgender{
+    background-color: white;
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+}
+
+#idproducts_number{
+    background-color: white;
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+}
+
+#idactive_member{
+    background-color: white;
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+}
+
+#idcredit_card{
     background-color: white;
 
     padding: 8px;
