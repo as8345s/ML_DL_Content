@@ -26,28 +26,8 @@ function exec_prediction(){
     var gender_dict     = {'Male': 1, 'Female': 0}
     var prediction_text = {0: 'Churn: No', 1: 'Churn: Yes'}
     var yes_no_dict     = {'Yes':1, 'No':0}
-    /*
-    if (credit_card == null || credit_card == 'undefined'){
-        credit_card = 'No';
-    }
-    if (active_member == null || active_member == 'undefined'){
-        active_member = 'No';
-    }
-    if (country == null || country == 'undefined'){
-        country = 'Spain';
-    }
-    if (age == null || age == 'undefined'){
-        age = 18;
-    }
-    if (gender == null || gender == 'undefined'){
-        gender = 'Male';
-    }
-    if (products_number == null || products_number == 'undefined'){
-        products_number = 0;
-    }
-        */
-
-    
+   
+    // Standard values are set in HTML.
 
     // Scale age based on MinMaxScaler from Sklearn.
     // - Formula can be found on the website. 
