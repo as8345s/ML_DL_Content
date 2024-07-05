@@ -1,13 +1,13 @@
+// Test function, opens new tab and displays result.
 function test_func(){
     document.write(5 + 6);
 }
 
 
-
-
+// Core of the prediction.
 function exec_prediction(){
-    console.log("Enter prediction")
-    // collect variables
+    
+    // collect variables.
     var credit_score = document.getElementById('id_credit_score').value;
     var country      = document.getElementById('idcountry').value;
     var gender   = document.getElementById('idgender').value;
@@ -18,32 +18,35 @@ function exec_prediction(){
     var credit_card     = document.getElementById('idcredit_card').value;
     var active_member   = document.getElementById('idactive_member').value;
     var estimated_salary= document.getElementById('idestimated_salary').value;
-    //document.write(estimated_salary); // -- really works
-
-    // End point URL to post data for prediction
-    var url = "http://localhost:5000/make_prediction";
-    //document.getElementById("demo").innerHTML = 5 + 6;
-    // Query
-    //document.getElementById("demo").innerHTML = 5 + 10; //-- works from here
-
+    // More inputs... 
+    // - Watch out for the right spelling.
+    // - Input can be parsed and so on.  
+  
+    // End point URL to post data for prediction.
+    // - See file server.py which uses predict() to collect data and returns the result. 
+    var url          = "http://localhost:5000/make_prediction";
+    var country_dict = {'France': 0, 'Spain': 1, 'Germany': 2};
+    var prediction_text = {0: 'Churn: No', 1: 'Churn: Yes'}
+   
+    // Query.
+    // - Post data and get result and status.
     $.post(url, {
-        credit_score: 0,
-        country: 0,
-        gender: 0,
-        age: 0,
-        tenure: 0,
-        balance: 0,
-        products_number:0,
-        credit_card: 0,
-        active_member: 0,
-        estimated_salary: 0,
+        credit_score: credit_score,
+        country: country_dict[country],
+        gender: gender,
+        age: age,
+        tenure: tenur,
+        balance: balance,
+        products_number: products_number,
+        credit_card: credit_card,
+        active_member:active_member,
+        estimated_salary: estimated_salary,
 
-    },function(data, status){ // data, status, xhr
-        //console.log(data.churn_prediction);
-        document.getElementById("demo").innerHTML = status;
-        //console.log(status);
+    },function(data, status){ 
+        console.log(data.churn_prediction);
+        //document.getElementById("result").innerHTML = "Prediction: " + data.churn_prediction + " Status Request: " + status + " " + " " + country;
+        document.getElementById("result").innerHTML = "Prediction: " + data.churn_prediction + ", " + prediction_text[data.churn_prediction];
+        console.log(status);
     });
 
-
-    //document.getElementById("demo").innerHTML = 5 + 6;
 }

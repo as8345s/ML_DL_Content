@@ -1,9 +1,7 @@
 
 body {
-    font-family: Arial, sans-serif;
-
+     font-family: Arial, sans-serif;
      background-image: url("./data/backgr.jpg")
-
 }
 
 form {
@@ -27,13 +25,52 @@ input {
     border-radius: 4px;
 }
 
+
+
 #welcome{
+
     text-align: center;
+    font-size:40px;
+    padding: 50px;
     font-family: Arial
+}
+
+#text_box{
+
+  display: grid;
+  content-align: center;
+
 
 }
 
-// --
+
+
+#idcountry{
+    background-color: white;
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+}
+
+#result{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px 4px;
+    border-style: solid;
+    border-width: 2px;
+
+
+    width: 360px;
+    background-color: white;
+    border-radius: 5px;
+
+
+}
+
+// -- Button
 .default {
   border-color: #e7e7e7;
   color: black;
@@ -48,6 +85,7 @@ input {
   background-color: white;
   color: black;
   padding: 14px 28px;
+  margin: 50px 0px;
   font-size: 16px;
   cursor: pointer;
 }

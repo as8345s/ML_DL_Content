@@ -12,8 +12,9 @@
 </head>
 <body>
 
-    <p id="welcome">Welcome to the Customer Churn prediction page!</p>
+    <p id="welcome">Welcome to the Customer Churn prediction page!</p><br>
 
+    
     <form>
         <div class="form-group">
             <label for="id_credit_score">credit_score</label>
@@ -21,7 +22,15 @@
         </div>
         <div class="form-group">
             <label for="idcountry">Country</label>
-            <input type="text" id="idcountry" name="idcountry">
+            <select id="idcountry" name="idcountry">
+                <option value="" disabled="disabled" selected="selected">Choose Country </option>
+                <option>France</option>
+                <option>Spain</option>
+                <option>Germany</option>
+
+
+            </select>
+            <!--<input type="text" id="idcountry" name="idcountry">-->
         </div>
         <div class="form-group">
             <label for="idgender">Gender</label>
@@ -58,7 +67,7 @@
     </form>
 
 
-  <button class="btn default" onclick="exec_prediction()"> Default </button>
+  <button class="btn default" onclick="exec_prediction()"> Predict </button>
 
   <p id="result">Prediction: </p>
 
