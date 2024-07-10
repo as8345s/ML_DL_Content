@@ -30,7 +30,8 @@ wheels/
 *.pkl
 *.pyc
 *.pt
-
+*.mp4
+*.avi
 
 
 
@@ -46,6 +47,7 @@ yolo_tmp/*
 deep_learning/TF/data/datasets/tf_flowers/*
 deep_learning/TF/data/datasets/IMDB/*
 deep_learning/TF/data/datasets/*.gz
+deep_learning/PyTorch/data/datasets/*
 
 # Environments
 .env
