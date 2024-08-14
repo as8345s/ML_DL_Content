@@ -48,6 +48,7 @@ deep_learning/TF/data/datasets/tf_flowers/*
 deep_learning/TF/data/datasets/IMDB/*
 deep_learning/TF/data/datasets/*.gz
 deep_learning/PyTorch/data/datasets/*
+deep_learning/TF/data/*
 
 
 # Environments
