@@ -49,6 +49,7 @@ deep_learning/TF/data/datasets/IMDB/*
 deep_learning/TF/data/datasets/*.gz
 deep_learning/PyTorch/data/datasets/*
 deep_learning/TF/data/*
+deep_learning/TF/datasets/ESC-50-master/*
 
 
 # Environments
